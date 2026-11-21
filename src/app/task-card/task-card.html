@@ -1,0 +1,8 @@
+<div class="card">
+  <strong>{{ task().title }}</strong>
+  @if (task().completed) {
+    <span> ✓ Terminée</span>
+  } @else {
+    <button (click)="markDone()">Terminer</button>
+  }
+</div>
